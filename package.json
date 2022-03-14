@@ -1,0 +1,22 @@
+{
+  "name": "front-end-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "front-end-site",
+  "author": "alrawanhope",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.9.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
