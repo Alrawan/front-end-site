@@ -2,8 +2,8 @@ import React,{useEffect, useState} from "react"
 import axios from 'axios';
 
 const IndexPage = () => {
-  const [albums,setAlbums] = useState({})
-  const [photos,setPhotos] = useState({})
+  const [albums,setAlbums] = useState([])
+  const [photos,setPhotos] = useState([])
 
 
 useEffect(()=>{
@@ -25,6 +25,13 @@ axios.get(`https://jsonplaceholder.typicode.com/photos`)
       {console.log("DATA !",albums)}
       {console.log("DATA 2",photos)}
       <h1>GATSBY</h1>
+      {albums && albums.map(album => {
+        return (
+          <div style={{display:"flex"}}>
+          <p>{album.title}</p>
+        </div>
+        )
+      })}
     </main>
   )
 }
